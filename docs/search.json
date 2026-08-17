@@ -53,7 +53,7 @@
     "href": "DEPLOY.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\nDeploy AI-117\nAdd repository secrets:\nGOOGLE_SHEET_ID=1stguPJIK8VrrxXKbWyKb3Gz7OUTuL4icATUjgq8_B6Y\nGOOGLE_SHEET_GID=710329544\nANON_SALT=data117-fall-2026\nUse GitHub Pages: branch main, folder /docs."
+    "text": "Code\n\n\n\n\n\nDeploy AI-117\nAdd repository secrets:\nGOOGLE_SHEET_ID=XXXXXXX\nGOOGLE_SHEET_GID=7XXXXXX\nANON_SALT=data117-fall-2026\nUse GitHub Pages: branch main, folder /docs."
   },
   {
     "objectID": "workshop.html",
