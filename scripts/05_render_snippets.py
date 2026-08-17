@@ -9,6 +9,6 @@ t=json.loads((DOCS_DATA/'taste_terms.json').read_text()) if (DOCS_DATA/'taste_te
 for pc,v in t.items(): lines.append(f"- **{pc}** explains approximately **{v.get('variance',0):.1%}** of the variance. Positive terms include: {', '.join(v.get('positive',[])[:6])}.")
 (ROOT/'_tastemap.md').write_text('\n'.join(lines) if lines else 'The axis summary will appear after enough responses are available.')
 tracks=pd.read_csv(DOCS_DATA/'playlist_import.csv') if (DOCS_DATA/'playlist_import.csv').exists() else pd.DataFrame(); lines=['| # | Song | Artist | Links |\n|---:|---|---|---|']
-for r in tracks.itertuples(): lines.append(f"| {r.position} | {r.matched_title} | {r.matched_artist} | [Spotify search]({r.spotify_search_url}) · [YouTube search]({r.youtube_search_url}) |")
+for r in tracks.itertuples(): lines.append(f"| {r.position} | {r.Title} | {r.Artist} | [Spotify search]({r.spotify_search_url}) · [YouTube search]({r.youtube_search_url}) |")
 lines.append('\nDownload: [playlist_import.csv](docs_data/playlist_import.csv) or [playlist.txt](docs_data/playlist.txt).')
 (ROOT/'_playlist.md').write_text('\n'.join(lines)); log('rendered snippets')
