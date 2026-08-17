@@ -7,24 +7,24 @@
       "very happy",
       "energized happy",
       "happy because",
-      "when",
       "energy",
-      "energized",
-      "energetic"
+      "when",
+      "calm relaxed",
+      "very calm"
     ],
     "negative": [
-      "good",
-      "nostalgic",
       "upbeat",
+      "nostalgic",
       "mood",
-      "calm",
+      "good",
       "hyped",
+      "i\u00e2",
+      "at",
       "new",
       "down",
-      "i\u00e2",
-      "as"
+      "calm"
     ],
-    "variance": 0.06316923487011455
+    "variance": 0.06238978628139063
   },
   "PC2": {
     "positive": [
@@ -33,24 +33,24 @@
       "happy relaxed",
       "calm relaxed",
       "very calm",
-      "who",
       "which",
-      "also",
+      "who",
+      "hyped",
       "now",
-      "reminds"
+      "also"
     ],
     "negative": [
-      "upbeat",
       "happy",
+      "upbeat",
       "energetic",
-      "energized",
       "excited",
       "energized happy",
+      "energized",
+      "happy because",
       "because",
-      "mood",
-      "upbeat energized",
-      "gets"
+      "when",
+      "energy"
     ],
-    "variance": 0.05339483755936141
+    "variance": 0.05799247706661662
   }
 }
