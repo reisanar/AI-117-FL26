@@ -1,25 +1,39 @@
 import pandas as pd
-from common import DATA, DOCS_DATA
 
-df = pd.read_csv(DATA / "clean.csv")
+from common import DATA, DOCS_DATA, log
 
-if {
-    "song_title",
-    "song_artist"
-}.issubset(df.columns):
+CLEAN = DATA / "clean.csv"
 
-    playlist = pd.DataFrame({
-        "Title": df["song_title"],
-        "Artist": df["song_artist"]
-    })
+df = pd.read_csv(CLEAN)
 
-else:
+# Keep only rows with a valid song submission
+tracks = df[
+    ["participant_id", "song_title", "song_artist"]
+].copy()
 
-    playlist = pd.DataFrame(
-        columns=["Title", "Artist"]
-    )
+# Create the fields expected elsewhere in the site
+tracks["matched_title"] = tracks["song_title"]
+tracks["matched_artist"] = tracks["song_artist"]
+tracks["album"] = ""
 
-playlist.to_csv(
+# Save the file used by the Playlist page
+tracks.to_csv(
+    DOCS_DATA / "playlist_tracks.csv",
+    index=False
+)
+
+# Save the import file
+tracks[
+    ["matched_title", "matched_artist", "album"]
+].rename(
+    columns={
+        "matched_title": "Title",
+        "matched_artist": "Artist",
+        "album": "Album",
+    }
+).to_csv(
     DOCS_DATA / "playlist_import.csv",
     index=False
 )
+
+log(f"wrote {len(tracks)} playlist entries")
