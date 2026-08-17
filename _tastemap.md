@@ -1,2 +1,1 @@
-- **PC1** explains approximately **39.1%** of the variance. Positive terms include: being, joyful, social, joyful social, friends, room friends.
-- **PC2** explains approximately **30.6%** of the variance. Positive terms include: about memory, reminds, think about, home, home think, identity.
+The axis summary will appear after enough responses are available.

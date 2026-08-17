@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://USERNAME.github.io/AI-117/taste-map.html</loc>
+    <lastmod>2026-08-17T04:54:04.190Z</lastmod>
+  </url>
+  <url>
     <loc>https://USERNAME.github.io/AI-117/data.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/AI-117/DEPLOY.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/AI-117/index.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/AI-117/workshop.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://USERNAME.github.io/AI-117/playlist.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
+    <lastmod>2026-08-17T04:54:04.178Z</lastmod>
   </url>
   <url>
     <loc>https://USERNAME.github.io/AI-117/schemas/google_form_schema.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
+    <lastmod>2026-08-17T04:54:04.190Z</lastmod>
   </url>
   <url>
-    <loc>https://USERNAME.github.io/AI-117/taste-map.html</loc>
-    <lastmod>2026-08-17T04:10:27.000Z</lastmod>
+    <loc>https://USERNAME.github.io/AI-117/DEPLOY.html</loc>
+    <lastmod>2026-08-17T04:54:04.177Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/AI-117/workshop.html</loc>
+    <lastmod>2026-08-17T04:54:04.190Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/AI-117/index.html</loc>
+    <lastmod>2026-08-17T04:54:04.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://USERNAME.github.io/AI-117/playlist.html</loc>
+    <lastmod>2026-08-17T04:54:04.189Z</lastmod>
   </url>
 </urlset>
