@@ -1,1 +1,56 @@
-{}
+{
+  "PC1": {
+    "positive": [
+      "happy",
+      "relaxed",
+      "very happy",
+      "energetic",
+      "very",
+      "when",
+      "happy because",
+      "it\u00e2",
+      "motivated",
+      "self"
+    ],
+    "negative": [
+      "upbeat",
+      "little",
+      "day",
+      "i\u00e2",
+      "as",
+      "new",
+      "out",
+      "mood",
+      "excited",
+      "will"
+    ],
+    "variance": 0.0854563853941714
+  },
+  "PC2": {
+    "positive": [
+      "upbeat",
+      "happy",
+      "energetic",
+      "day",
+      "upbeat energized",
+      "mood",
+      "energized happy",
+      "energized",
+      "little",
+      "very"
+    ],
+    "negative": [
+      "at",
+      "as",
+      "i\u00e2",
+      "about",
+      "nostalgic",
+      "new",
+      "reflective",
+      "best",
+      "down",
+      "calm"
+    ],
+    "variance": 0.06449162443137849
+  }
+}

@@ -1,1 +1,2 @@
-The axis summary will appear after enough responses are available.
+- **PC1** explains approximately **8.5%** of the variance. Positive terms include: happy, relaxed, very happy, energetic, very, when.
+- **PC2** explains approximately **6.4%** of the variance. Positive terms include: upbeat, happy, energetic, day, upbeat energized, mood.

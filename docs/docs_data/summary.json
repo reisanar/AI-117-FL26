@@ -1,4 +1,38 @@
 {
-  "n_participants": 0,
-  "n_unique_songs": 0
+  "n_participants": 75,
+  "top_locations": [
+    [
+      "NC",
+      21
+    ],
+    [
+      "North Carolina",
+      8
+    ],
+    [
+      "Usa",
+      6
+    ],
+    [
+      "Charlotte",
+      5
+    ],
+    [
+      "US",
+      3
+    ],
+    [
+      "Birmingham Al",
+      1
+    ],
+    [
+      "Smithfield/Nc/United States",
+      1
+    ],
+    [
+      "Egypt",
+      1
+    ]
+  ],
+  "n_unique_songs": 74
 }
