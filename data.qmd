@@ -13,5 +13,5 @@ from pathlib import Path
 import pandas as pd
 p=Path("docs_data/responses_anon.csv")
 if p.exists():
-    df=pd.read_csv(p); print(f"{len(df)} participants, {len(df.columns)} columns"); display(df.head())
+    df=pd.read_csv(p); print(f"{len(df)} participants, {len(df.columns)} columns"); display(df.head(150))
 ```
