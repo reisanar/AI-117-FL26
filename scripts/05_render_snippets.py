@@ -9,25 +9,35 @@ t=json.loads((DOCS_DATA/'taste_terms.json').read_text()) if (DOCS_DATA/'taste_te
 for pc,v in t.items(): lines.append(f"- **{pc}** explains approximately **{v.get('variance',0):.1%}** of the variance. Positive terms include: {', '.join(v.get('positive',[])[:6])}.")
 (ROOT/'_tastemap.md').write_text('\n'.join(lines) if lines else 'The axis summary will appear after enough responses are available.')
 tracks=pd.read_csv(DOCS_DATA/'playlist_import.csv') if (DOCS_DATA/'playlist_import.csv').exists() else pd.DataFrame(); lines=['| # | Song | Artist | Links |\n|---:|---|---|---|']
-for i, r in enumerate(tracks.itertuples(), start=1):
-
-    title = getattr(
-        r,
-        "matched_title",
-        getattr(r, "Title", "")
-    )
-
-    artist = getattr(
-        r,
-        "matched_artist",
-        getattr(r, "Artist", "")
-    )
-
-lines.append(
-    f"| {i} | {r.song_title} | {r.song_artist} |"
+tracks = (
+    pd.read_csv(DOCS_DATA / "playlist_import.csv")
+    if (DOCS_DATA / "playlist_import.csv").exists()
+    else pd.DataFrame(columns=["Title", "Artist"])
 )
 
+lines = []
+
+lines.append("| # | Song | Artist |")
+lines.append("|---:|---|---|")
+
+for i, r in enumerate(
+    tracks.itertuples(index=False),
+    start=1
+):
+
+    lines.append(
+        f"| {i} | {r.Title} | {r.Artist} |"
+    )
+
+lines.append("")
 lines.append(
-    "\nDownload: docs_data/playlist_import.csv or docs_data/playlist.txt."
+    "Download: [playlist_import.csv](docscsv"
 )
-(ROOT/'_playlist.md').write_text('\n'.join(lines)); log('rendered snippets')
+
+(ROOT / "_playlist.md").write_text(
+    "\n".join(lines)
+)
+
+log(
+    f"rendered playlist with {len(tracks)} entries"
+)
