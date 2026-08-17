@@ -32,14 +32,14 @@
     "href": "taste-map.html#reading-the-axes",
     "title": "Music Map",
     "section": "Reading the axes",
-    "text": "Reading the axes\n\nPC1 explains approximately 8.5% of the variance. Positive terms include: happy, relaxed, very happy, energetic, very, when.\nPC2 explains approximately 6.4% of the variance. Positive terms include: upbeat, happy, energetic, day, upbeat energized, mood.\n\n\n\n\nTerms with strongest loadings on each component"
+    "text": "Reading the axes\n\nPC1 explains approximately 6.3% of the variance. Positive terms include: happy, relaxed, happy relaxed, very happy, energized happy, happy because.\nPC2 explains approximately 5.3% of the variance. Positive terms include: relaxed, calm, happy relaxed, calm relaxed, very calm, who.\n\n\n\n\nTerms with strongest loadings on each component"
   },
   {
     "objectID": "data.html",
     "href": "data.html",
     "title": "Data",
     "section": "",
-    "text": "File\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per participant, hashed ID, published survey fields\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\nplaylist_tracks.csv\nRequested and matched song metadata\n\n\n\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\np=Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df=pd.read_csv(p); print(f\"{len(df)} participants, {len(df.columns)} columns\"); display(df.head())\n\n\n75 participants, 8 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nbackground\nhometown\nsong_title\nsong_artist\ntaste_text\nai_definition\nparticipant_id\n\n\n\n\n0\n8/17/2026 11:50:18\nBusiness Major\nCary, North Carolina, USA\nNot You Too\nDrake & Chris Brown\nLovely\nSomething that changed everything.\nade3cb3e\n\n\n1\n8/17/2026 11:50:33\nMathematics\nBirmingham AL\nBeen by now\nMorgan wallen\nDriving windows down summer\nA system that assists in increasing the effici...\n9c16ded3\n\n\n2\n8/17/2026 11:50:38\nPre Business\nCharlotte, NC\nUp All Night\nWidespread Panic\nHappy and higher energy\nAny sort of machine or process that learns fro...\ne8ddc51f\n\n\n3\n8/17/2026 11:50:45\nBusiness\nCary, NC\nCircles\nPost Malone\nNostalgia\nA system of neural networks powered by data-dr...\n796b0ad0\n\n\n4\n8/17/2026 11:50:46\nData Science\nSmithfield/NC/United States\nCaramelo - Remix\nOzuna\nIt makes me feel relaxed\nAn artificial helper that makes everyday tasks...\ne34280e7"
+    "text": "File\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per participant, hashed ID, published survey fields\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\nplaylist_tracks.csv\nRequested and matched song metadata\n\n\n\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\np=Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df=pd.read_csv(p); print(f\"{len(df)} participants, {len(df.columns)} columns\"); display(df.head())\n\n\n142 participants, 8 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nbackground\nhometown\nsong_title\nsong_artist\ntaste_text\nai_definition\nparticipant_id\n\n\n\n\n0\n8/17/2026 11:50:18\nBusiness Major\nCary, North Carolina, USA\nNot You Too\nDrake & Chris Brown\nLovely\nSomething that changed everything.\nade3cb3e\n\n\n1\n8/17/2026 11:50:33\nMathematics\nBirmingham AL\nBeen by now\nMorgan wallen\nDriving windows down summer\nA system that assists in increasing the effici...\n9c16ded3\n\n\n2\n8/17/2026 11:50:38\nPre Business\nCharlotte, NC\nUp All Night\nWidespread Panic\nHappy and higher energy\nAny sort of machine or process that learns fro...\ne8ddc51f\n\n\n3\n8/17/2026 11:50:45\nBusiness\nCary, NC\nCircles\nPost Malone\nNostalgia\nA system of neural networks powered by data-dr...\n796b0ad0\n\n\n4\n8/17/2026 11:50:46\nData Science\nSmithfield/NC/United States\nCaramelo - Remix\nOzuna\nIt makes me feel relaxed\nAn artificial helper that makes everyday tasks...\ne34280e7"
   },
   {
     "objectID": "schemas/google_form_schema.html",
@@ -81,7 +81,7 @@
     "href": "index.html#the-cohort-by-the-numbers",
     "title": "DATA 117 Fall 2026 Cohort",
     "section": "The cohort, by the numbers",
-    "text": "The cohort, by the numbers\n\n75 participants represented so far, with 74 unique songs in the playlist.\n\n\nGenerated views\n\n\n\nPlaces the cohort calls home\n\n\n\n\n\nUndergraduate background, grouped\n\n\n\n\n\nWords from one-sentence AI definitions"
+    "text": "The cohort, by the numbers\n\n142 participants represented so far, with 137 unique songs in the playlist.\n\n\nGenerated views\n\n\n\nPlaces the cohort calls home\n\n\n\n\n\nUndergraduate background, grouped\n\n\n\n\n\nWords from one-sentence AI definitions"
   },
   {
     "objectID": "index.html#whats-next",
