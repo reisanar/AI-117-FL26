@@ -1,0 +1,2 @@
+from common import ROOT,DOCS_DATA,DOCS_ASSETS,log
+(ROOT/'_generated.md').write_text('No responses yet.\n');(ROOT/'_tastemap.md').write_text('The axis summary will appear after enough responses are available.\n');(ROOT/'_playlist.md').write_text('No playlist entries yet.\n');(DOCS_DATA/'responses_anon.csv').write_text('participant_id\n');(DOCS_DATA/'summary.json').write_text('{"n_participants":0}');(DOCS_ASSETS/'taste_map.html').write_text('<html><body>No map yet.</body></html>');log('wrote placeholders')

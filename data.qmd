@@ -1,0 +1,17 @@
+---
+title: "Data"
+---
+
+| File | What's in it |
+|---|---|
+| [responses_anon.csv](docs_data/responses_anon.csv) | One row per participant, hashed ID, published survey fields |
+| [taste_coords.csv](docs_data/taste_coords.csv) | PC1/PC2 coordinates, cluster, neighborhood label |
+| [playlist_tracks.csv](docs_data/playlist_tracks.csv) | Requested and matched song metadata |
+
+```{python}
+from pathlib import Path
+import pandas as pd
+p=Path("docs_data/responses_anon.csv")
+if p.exists():
+    df=pd.read_csv(p); print(f"{len(df)} participants, {len(df.columns)} columns"); display(df.head())
+```

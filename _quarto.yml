@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - docs_assets/**
+    - docs_data/**
+website:
+  title: "DATA 117 Fall 2026 Cohort"
+  description: "Getting to know our class through data, AI definitions, music, and storytelling."
+  site-url: "https://USERNAME.github.io/AI-117/"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: taste-map.qmd
+        text: Music Map
+      - href: playlist.qmd
+        text: Playlist
+      - href: data.qmd
+        text: Data
+      - href: workshop.qmd
+        text: Behind the Scenes
+  page-footer:
+    left: "DATA 117 Fall 2026 · Built with Quarto"
+    right: "Automatically refreshed from survey responses."
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    fig-align: center
+    smooth-scroll: true
+    link-external-newwindow: true
+execute:
+  freeze: auto
+  warning: false
+  message: false

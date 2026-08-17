@@ -1,0 +1,25 @@
+---
+title: "DATA 117 Fall 2026 Cohort"
+subtitle: "A living class snapshot generated from survey responses."
+---
+
+Welcome to the **DATA 117 Fall 2026 Cohort Snapshot**.
+
+This site is a living picture of our class community: where we come from, how we define artificial intelligence, what inspires us, and the music we chose to represent ourselves.
+
+Responses are collected through a Google Form and automatically transformed into visualizations, a musical taste map, an AI-definition word cloud, and a class playlist.
+
+## Haven't filled it out yet?
+
+[Take the DATA 117 survey](https://forms.gle/xYPbUmVaRbAJpqSh9){.btn .btn-primary}
+
+## The cohort, by the numbers
+
+{{< include _generated.md >}}
+
+## What's next
+
+- [Music Map](taste-map.qmd) — where songs and one-sentence reflections land in music-text space.
+- [Playlist](playlist.qmd) — the class playlist, with preview cards when tracks can be matched.
+- [Data](data.qmd) — the anonymized dataset and generated files.
+- [Behind the Scenes](workshop.qmd) — a lightweight walkthrough of tf-idf, PCA, and the workflow.

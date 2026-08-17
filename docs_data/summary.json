@@ -1,0 +1,26 @@
+{
+  "n_participants": 42,
+  "top_locations": [
+    [
+      "NC",
+      22
+    ],
+    [
+      "Colombia",
+      7
+    ],
+    [
+      "India",
+      5
+    ],
+    [
+      "NY",
+      4
+    ],
+    [
+      "TX",
+      4
+    ]
+  ],
+  "n_unique_songs": 8
+}

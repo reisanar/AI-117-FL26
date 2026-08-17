@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "File\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per participant, hashed ID, published survey fields\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\nplaylist_tracks.csv\nRequested and matched song metadata\n\n\n\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\np=Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df=pd.read_csv(p); print(f\"{len(df)} participants, {len(df.columns)} columns\"); display(df.head())\n\n\n42 participants, 9 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nbackground\nhometown\nai_definition\nai_interest\nsong_title\nsong_artist\ntaste_text\nparticipant_id\n\n\n\n\n0\n2026-08-01 10:00:00\nComputer Science\nBogota, Colombia\nAI is a set of methods that helps machines per...\nAI in education\nNot Like Us\nKendrick Lamar\nIt reminds me of home and makes me think about...\n13d84e29\n\n\n1\n2026-08-02 10:01:00\nPsychology\nDurham, NC\nAI is software that imitates parts of human re...\nresponsible AI\nBlinding Lights\nThe Weeknd\nIt feels joyful and social, like being in a ro...\n6ee7808d\n\n\n2\n2026-08-03 10:02:00\nInformation Science\nRaleigh, NC\nAI is a computer system that learns patterns f...\ndata privacy\nTexas Hold 'Em\nBeyonce\nIt feels energetic and optimistic, like starti...\n86c8708c\n\n\n3\n2026-08-04 10:03:00\nPublic Policy\nCharlotte, NC\nAI is a computer system that learns patterns f...\ndata privacy\nBlinding Lights\nThe Weeknd\nIt feels joyful and social, like being in a ro...\n9a15fcdc\n\n\n4\n2026-08-05 10:04:00\nComputer Science\nMumbai, India\nAI is technology that turns data into actions,...\ndata privacy\nGood Luck, Babe!\nChappell Roan\nIt reminds me of home and makes me think about...\ndb4e7b01"
+  },
+  {
+    "objectID": "DEPLOY.html",
+    "href": "DEPLOY.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nDeploy AI-117\nAdd repository secrets:\nGOOGLE_SHEET_ID=1stguPJIK8VrrxXKbWyKb3Gz7OUTuL4icATUjgq8_B6Y\nGOOGLE_SHEET_GID=710329544\nANON_SALT=data117-fall-2026\nUse GitHub Pages: branch main, folder /docs."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DATA 117 Fall 2026 Cohort",
+    "section": "",
+    "text": "Welcome to the DATA 117 Fall 2026 Cohort Snapshot.\nThis site is a living picture of our class community: where we come from, how we define artificial intelligence, what inspires us, and the music we chose to represent ourselves.\nResponses are collected through a Google Form and automatically transformed into visualizations, a musical taste map, an AI-definition word cloud, and a class playlist."
+  },
+  {
+    "objectID": "index.html#havent-filled-it-out-yet",
+    "href": "index.html#havent-filled-it-out-yet",
+    "title": "DATA 117 Fall 2026 Cohort",
+    "section": "Haven’t filled it out yet?",
+    "text": "Haven’t filled it out yet?\nTake the DATA 117 survey"
+  },
+  {
+    "objectID": "index.html#the-cohort-by-the-numbers",
+    "href": "index.html#the-cohort-by-the-numbers",
+    "title": "DATA 117 Fall 2026 Cohort",
+    "section": "The cohort, by the numbers",
+    "text": "The cohort, by the numbers\n\n42 participants represented so far, with 8 unique songs in the playlist.\n\n\nGenerated views\n\n\n\nPlaces the cohort calls home\n\n\n\n\n\nUndergraduate background, grouped\n\n\n\n\n\nWords from one-sentence AI definitions\n\n\n\n\n\nAI interests in students own words"
+  },
+  {
+    "objectID": "index.html#whats-next",
+    "href": "index.html#whats-next",
+    "title": "DATA 117 Fall 2026 Cohort",
+    "section": "What’s next",
+    "text": "What’s next\n\nMusic Map — where songs and one-sentence reflections land in music-text space.\nPlaylist — the class playlist, with preview cards when tracks can be matched.\nData — the anonymized dataset and generated files.\nBehind the Scenes — a lightweight walkthrough of tf-idf, PCA, and the workflow."
+  },
+  {
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Behind the Scenes",
+    "section": "",
+    "text": "The music map uses the sentence each person wrote about how their song makes them feel. The AI word cloud uses the one-sentence definition of artificial intelligence from the survey.\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\nsrc=Path(\"docs_data/responses_anon.csv\")\nif src.exists():\n    df=pd.read_csv(src)\n    if \"ai_definition\" in df:\n        display(df[\"ai_definition\"].dropna().head(3).tolist())\n\n\n['AI is a set of methods that helps machines perceive, learn, and adapt from examples.',\n 'AI is software that imitates parts of human reasoning by recognizing patterns and generating responses.',\n 'AI is a computer system that learns patterns from data to make predictions or support decisions.']"
+  },
+  {
+    "objectID": "playlist.html",
+    "href": "playlist.html",
+    "title": "The DATA 117 Playlist",
+    "section": "",
+    "text": "One song per person, sequenced by the taste map.\n\n\n\n#\nSong\nArtist\nLinks\n\n\n\n\n1\nBlinding Lights\nThe Weeknd\nSpotify search · YouTube search\n\n\n2\nTití Me Preguntó\nBad Bunny\nSpotify search · YouTube search\n\n\n3\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n4\nGood Luck, Babe!\nChappell Roan\nSpotify search · YouTube search\n\n\n5\nClair de Lune\nDebussy\nSpotify search · YouTube search\n\n\n6\nTití Me Preguntó\nBad Bunny\nSpotify search · YouTube search\n\n\n7\nNot Like Us\nKendrick Lamar\nSpotify search · YouTube search\n\n\n8\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n9\nGood Luck, Babe!\nChappell Roan\nSpotify search · YouTube search\n\n\n10\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n11\nTití Me Preguntó\nBad Bunny\nSpotify search · YouTube search\n\n\n12\nFast Car\nTracy Chapman\nSpotify search · YouTube search\n\n\n13\nBlinding Lights\nThe Weeknd\nSpotify search · YouTube search\n\n\n14\nClair de Lune\nDebussy\nSpotify search · YouTube search\n\n\n15\nNot Like Us\nKendrick Lamar\nSpotify search · YouTube search\n\n\n16\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n17\nTití Me Preguntó\nBad Bunny\nSpotify search · YouTube search\n\n\n18\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n19\nNot Like Us\nKendrick Lamar\nSpotify search · YouTube search\n\n\n20\nGood Luck, Babe!\nChappell Roan\nSpotify search · YouTube search\n\n\n21\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n22\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n23\nBlinding Lights\nThe Weeknd\nSpotify search · YouTube search\n\n\n24\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n25\nBlinding Lights\nThe Weeknd\nSpotify search · YouTube search\n\n\n26\nClair de Lune\nDebussy\nSpotify search · YouTube search\n\n\n27\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n28\nGood Luck, Babe!\nChappell Roan\nSpotify search · YouTube search\n\n\n29\nFast Car\nTracy Chapman\nSpotify search · YouTube search\n\n\n30\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n31\nClair de Lune\nDebussy\nSpotify search · YouTube search\n\n\n32\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n33\nGood Luck, Babe!\nChappell Roan\nSpotify search · YouTube search\n\n\n34\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n35\nBlinding Lights\nThe Weeknd\nSpotify search · YouTube search\n\n\n36\nNot Like Us\nKendrick Lamar\nSpotify search · YouTube search\n\n\n37\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n38\nFast Car\nTracy Chapman\nSpotify search · YouTube search\n\n\n39\nLovely Day\nBill Withers\nSpotify search · YouTube search\n\n\n40\nTexas Hold ’Em\nBeyonce\nSpotify search · YouTube search\n\n\n41\nNot Like Us\nKendrick Lamar\nSpotify search · YouTube search\n\n\n42\nNot Like Us\nKendrick Lamar\nSpotify search · YouTube search\n\n\n\nDownload: playlist_import.csv or playlist.txt."
+  },
+  {
+    "objectID": "schemas/google_form_schema.html",
+    "href": "schemas/google_form_schema.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nGoogle Form blueprint\nUse DATA 117 survey. No role/program or genres are expected. Hometown is used only for a word cloud. AI definitions are used for the AI-definition word cloud."
+  },
+  {
+    "objectID": "taste-map.html",
+    "href": "taste-map.html",
+    "title": "Music Map",
+    "section": "",
+    "text": "Every person becomes a short document: the sentence they wrote about how their song makes them feel. The workflow turns those sentences into tf-idf vectors, projects them to two dimensions with PCA, and uses lightweight clustering to name taste neighborhoods.\nColor shows the learned taste neighborhood. The map intentionally does not encode role or program because the DATA 117 survey does not collect that information."
+  },
+  {
+    "objectID": "taste-map.html#the-idea",
+    "href": "taste-map.html#the-idea",
+    "title": "Music Map",
+    "section": "",
+    "text": "Every person becomes a short document: the sentence they wrote about how their song makes them feel. The workflow turns those sentences into tf-idf vectors, projects them to two dimensions with PCA, and uses lightweight clustering to name taste neighborhoods.\nColor shows the learned taste neighborhood. The map intentionally does not encode role or program because the DATA 117 survey does not collect that information."
+  },
+  {
+    "objectID": "taste-map.html#interactive-map",
+    "href": "taste-map.html#interactive-map",
+    "title": "Music Map",
+    "section": "Interactive map",
+    "text": "Interactive map"
+  },
+  {
+    "objectID": "taste-map.html#static-map",
+    "href": "taste-map.html#static-map",
+    "title": "Music Map",
+    "section": "Static map",
+    "text": "Static map\n\n\n\nMusical taste map of the DATA 117 cohort"
+  },
+  {
+    "objectID": "taste-map.html#reading-the-axes",
+    "href": "taste-map.html#reading-the-axes",
+    "title": "Music Map",
+    "section": "Reading the axes",
+    "text": "Reading the axes\n\nPC1 explains approximately 39.1% of the variance. Positive terms include: being, joyful, social, joyful social, friends, room friends.\nPC2 explains approximately 30.6% of the variance. Positive terms include: about memory, reminds, think about, home, home think, identity.\n\n\n\n\nTerms with strongest loadings on each component"
+  }
+]

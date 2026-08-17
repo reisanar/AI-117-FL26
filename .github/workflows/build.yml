@@ -1,0 +1,30 @@
+name: Refresh snapshot and publish
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ["docs/**", "docs_assets/**", "docs_data/**"]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - run: pip install -r requirements.txt
+      - run: |
+          echo "GOOGLE_SHEET_ID=${{ secrets.GOOGLE_SHEET_ID }}" >> $GITHUB_ENV
+          echo "GOOGLE_SHEET_GID=${{ secrets.GOOGLE_SHEET_GID }}" >> $GITHUB_ENV
+          echo "ANON_SALT=${{ secrets.ANON_SALT }}" >> $GITHUB_ENV
+      - run: python scripts/run_all.py
+      - run: quarto render
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Refresh DATA 117 snapshot"
+          file_pattern: "docs docs_assets docs_data _generated.md _tastemap.md _playlist.md"

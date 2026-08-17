@@ -1,0 +1,7 @@
+---
+title: "The DATA 117 Playlist"
+---
+
+One song per person, sequenced by the taste map.
+
+{{< include _playlist.md >}}

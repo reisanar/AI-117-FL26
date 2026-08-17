@@ -1,0 +1,15 @@
+---
+title: "Behind the Scenes"
+---
+
+The music map uses the sentence each person wrote about how their song makes them feel. The AI word cloud uses the one-sentence definition of artificial intelligence from the survey.
+
+```{python}
+from pathlib import Path
+import pandas as pd
+src=Path("docs_data/responses_anon.csv")
+if src.exists():
+    df=pd.read_csv(src)
+    if "ai_definition" in df:
+        display(df["ai_definition"].dropna().head(3).tolist())
+```

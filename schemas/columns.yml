@@ -1,0 +1,30 @@
+email:
+  exact: ["Email", "Email address", "Email Address", "Username"]
+  patterns: ['^e-?mail']
+background:
+  exact: ["What is your undergraduate background?"]
+  patterns: ['undergrad', 'major', 'academic background', 'field of study']
+hometown:
+  exact: ["Where did you grow up? (city, state/country)", "What city, state, or country do you call home?", "Where do you call home?"]
+  patterns: ['where did you grow up', 'hometown', 'grew up', 'call home', 'city state country', 'city.*state.*country']
+ai_definition:
+  exact: ["In one sentence, how would you define artificial intelligence?", "In one sentence, define artificial intelligence", "In one sentence, define AI", "How would you define AI in one sentence?", "How would you define artificial intelligence in one sentence?"]
+  patterns: ['define.*artificial intelligence', 'define.*\bai\b', 'definition.*\bai\b', 'definition.*artificial intelligence', 'one sentence.*\bai\b', 'one sentence.*artificial intelligence']
+ai_interest:
+  exact: ["What excites you most about AI right now?"]
+  patterns: ['excites.*ai', 'ai.*excites', 'interested.*ai']
+goals:
+  exact: ["What is one thing you hope to learn in DATA 117?"]
+  patterns: ['hope to learn', 'want to learn', 'learning goal']
+song_title:
+  exact: ["What is the title of one song that has been on your mind recently?", "One song that has to be on the cohort playlist"]
+  patterns: ['title of one song', 'song.*playlist', 'song.*mind', 'what song', 'one song']
+song_artist:
+  exact: ["Who performs it?"]
+  patterns: ['who performs', 'who sings', 'artist', 'performed by']
+taste_text:
+  exact: ["In a sentence, describe how this song makes you feel", "Describe your music taste in a sentence"]
+  patterns: ['makes you feel', 'music taste', 'describe.*song', 'describe.*taste']
+timestamp:
+  exact: ["Timestamp"]
+  patterns: ['^timestamp$']
