@@ -22,4 +22,3 @@ Responses are collected through a Google Form and automatically transformed into
 - [Music Map](taste-map.qmd) — where songs and one-sentence reflections land in music-text space.
 - [Playlist](playlist.qmd) — the class playlist, with preview cards when tracks can be matched.
 - [Data](data.qmd) — the anonymized dataset and generated files.
-- [Behind the Scenes](workshop.qmd) — a lightweight walkthrough of tf-idf, PCA, and the workflow.
