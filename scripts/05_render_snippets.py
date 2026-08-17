@@ -31,7 +31,7 @@ for i, r in enumerate(
 
 lines.append("")
 lines.append(
-    "Download: [playlist_import.csv](docscsv"
+    "Download: [playlist_import.csv](docs_data/playlist_import.csv)"
 )
 
 (ROOT / "_playlist.md").write_text(
