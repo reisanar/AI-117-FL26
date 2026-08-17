@@ -23,7 +23,11 @@ for i, r in enumerate(tracks.itertuples(), start=1):
         getattr(r, "Artist", "")
     )
 
-    lines.append(
-        f"| {i} | {title} | {artist} | |"
-    )lines.append('\nDownload: [playlist_import.csv](docs_data/playlist_import.csv) or [playlist.txt](docs_data/playlist.txt).')
+lines.append(
+    f"| {i} | {r.song_title} | {r.song_artist} |"
+)
+
+lines.append(
+    "\nDownload: docs_data/playlist_import.csv or docs_data/playlist.txt."
+)
 (ROOT/'_playlist.md').write_text('\n'.join(lines)); log('rendered snippets')
