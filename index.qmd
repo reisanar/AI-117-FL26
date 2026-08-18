@@ -20,5 +20,10 @@ Responses are collected through a Google Form and automatically transformed into
 ## What's next
 
 - [Music Map](taste-map.qmd) — where songs and one-sentence reflections land in music-text space.
-- [Playlist](playlist.qmd) — the class playlist, with preview cards when tracks can be matched.
 - [Data](data.qmd) — the anonymized dataset and generated files.
+- [Playlist](playlist.qmd) — the class playlist
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/14pt4S2uBJe2xYB7PLCXmC?utm_source=generator&si=6885204e615f4d30" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+
