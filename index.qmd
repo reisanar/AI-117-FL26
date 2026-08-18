@@ -17,6 +17,8 @@ Responses are collected through a Google Form and automatically transformed into
 
 {{< include _generated.md >}}
 
+![Words used in a one-sentence definition of AI](docs_assets/wordcloud_overall.png)
+
 ## What's next
 
 - [Music Map](taste-map.qmd) — where songs and one-sentence reflections land in music-text space.
