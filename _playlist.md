@@ -145,5 +145,7 @@
 | 143 | Lighthouse | Noah Kahan |
 | 144 | Breakfast at Tiffanyâs | Deep Blue Something |
 | 145 | The chain | Fleetwood Mac |
+| 146 | Ventura Highway | America |
+| 147 | Gettinâ hot | Knock2 |
 
 Download: [playlist_import.csv](docs_data/playlist_import.csv)

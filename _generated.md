@@ -1,5 +1,5 @@
 ::: {.hero-note}
-**145 participants** represented so far, with **140 unique songs** in the playlist.
+**147 participants** represented so far, with **142 unique songs** in the playlist.
 :::
 
 ### Generated views
