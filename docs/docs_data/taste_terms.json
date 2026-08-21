@@ -24,22 +24,10 @@
       "new",
       "down"
     ],
-    "variance": 0.06037078016833882
+    "variance": 0.059999145549041163
   },
   "PC2": {
     "positive": [
-      "happy",
-      "energetic",
-      "upbeat",
-      "energized happy",
-      "excited",
-      "energized",
-      "happy because",
-      "when",
-      "happy upbeat",
-      "energetic happy"
-    ],
-    "negative": [
       "relaxed",
       "calm",
       "calm relaxed",
@@ -51,6 +39,18 @@
       "down",
       "so"
     ],
-    "variance": 0.05599208648650571
+    "negative": [
+      "happy",
+      "upbeat",
+      "energetic",
+      "energized happy",
+      "excited",
+      "energized",
+      "happy because",
+      "when",
+      "happy upbeat",
+      "because"
+    ],
+    "variance": 0.055585696387115455
   }
 }

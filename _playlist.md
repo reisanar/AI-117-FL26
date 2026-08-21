@@ -147,5 +147,6 @@
 | 145 | The chain | Fleetwood Mac |
 | 146 | Ventura Highway | America |
 | 147 | Gettinâ hot | Knock2 |
+| 148 | What are you listening to | Chris Stapleton |
 
 Download: [playlist_import.csv](docs_data/playlist_import.csv)
