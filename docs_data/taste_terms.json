@@ -24,7 +24,7 @@
       "new",
       "down"
     ],
-    "variance": 0.059999145549041115
+    "variance": 0.059999145549041163
   },
   "PC2": {
     "positive": [
@@ -51,6 +51,6 @@
       "happy upbeat",
       "because"
     ],
-    "variance": 0.05558569638711551
+    "variance": 0.055585696387115455
   }
 }
