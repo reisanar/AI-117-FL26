@@ -1,56 +1,56 @@
 {
   "PC1": {
     "positive": [
-      "relaxed",
       "happy",
+      "relaxed",
       "happy relaxed",
       "very happy",
-      "calm relaxed",
       "energized happy",
-      "very calm",
+      "when",
       "happy because",
       "energy",
-      "when"
+      "calm relaxed",
+      "floating"
     ],
     "negative": [
       "upbeat",
       "nostalgic",
       "mood",
       "good",
+      "calm",
       "hyped",
       "at",
-      "i\u00e2",
-      "calm",
       "new",
-      "down"
+      "down",
+      "as"
     ],
-    "variance": 0.059999145549041115
+    "variance": 0.06042971368857674
   },
   "PC2": {
     "positive": [
       "relaxed",
       "calm",
       "calm relaxed",
-      "very calm",
       "happy relaxed",
-      "hyped",
+      "very calm",
       "which",
       "who",
-      "down",
-      "so"
+      "hyped",
+      "now",
+      "also"
     ],
     "negative": [
       "happy",
       "upbeat",
       "energetic",
-      "energized happy",
       "excited",
+      "energized happy",
+      "when",
       "energized",
       "happy because",
-      "when",
-      "happy upbeat",
-      "because"
+      "because",
+      "happy upbeat"
     ],
-    "variance": 0.05558569638711551
+    "variance": 0.05605383439767762
   }
 }

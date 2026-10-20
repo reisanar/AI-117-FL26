@@ -39,7 +39,7 @@
 | 37 | Every Breathe You Take | The Police |
 | 38 | Take it Easy | The Eagles |
 | 39 | Homerunner | Slayr |
-| 40 | Choosinâ Texas | Ella Langley |
+| 40 | Choosin’ Texas | Ella Langley |
 | 41 | YMCA | Unknown |
 | 42 | Say You Love Me | Fleetwood Mac |
 | 43 | The Rapture Pt. III | &ME, Black Coffee |
@@ -47,19 +47,19 @@
 | 45 | Pearls | Sade |
 | 46 | Congratulations | Post malone & Quavo |
 | 47 | One of those nights | Tim McGraw |
-| 48 | Baby weâve got a date | Bod Marley and the wailers |
+| 48 | Baby we’ve got a date | Bod Marley and the wailers |
 | 49 | Out the Door | Congress the Band |
 | 50 | Dashboard | Noah Kahan |
 | 51 | Vienna | Billy Joel |
-| 52 | For Cryâin out loud | Glen Campbell |
-| 53 | Donât cross the river | America |
+| 52 | For Cry’in out loud | Glen Campbell |
+| 53 | Don’t cross the river | America |
 | 54 | Good directions | Billy Currington |
 | 55 | Love Yourz | J. Cole |
 | 56 | Have you ever seen the rain | Creedence Clearwater revival |
 | 57 | Expectations | Olivia Rodrigo |
 | 58 | The bare necessities | Shalin |
 | 59 | Back to Oz | Sufjan Stevens & Angelo De Augustine |
-| 60 | Youâre on your own, kid | Taylor Swift |
+| 60 | You’re on your own, kid | Taylor Swift |
 | 61 | Locked out of heaven | Bruno Mars |
 | 62 | Feelin good again | Robert Earl Keen |
 | 63 | Saturday Night | Misfits |
@@ -70,8 +70,8 @@
 | 68 | Billie Jean | Micheal Jackson |
 | 69 | Safe and Sound | Capital Cities |
 | 70 | Carolina in my Mind | James Taylor |
-| 71 | SeÃ±orita | Justin Timberlake |
-| 72 | Spanish Joint | DâAngelo |
+| 71 | Señorita | Justin Timberlake |
+| 72 | Spanish Joint | D’Angelo |
 | 73 | Nutshell | Alice in Chains |
 | 74 | Judas | Lady gaga |
 | 75 | Tenebre Rosso Sangue | Keygen Church |
@@ -94,12 +94,12 @@
 | 92 | Sayang Kinabalu | Kimin Mudin |
 | 93 | Drops of Jupiter | Train |
 | 94 | Clarity | Zedd |
-| 95 | æ¼«æ­¥é¦æ¸¯1999 | Blue C |
+| 95 | 漫步香港1999 | Blue C |
 | 96 | Butta B | Fat Smxck |
 | 97 | high fives | drake |
-| 98 | âMe conformoâ Mike Towers | Mike towers |
+| 98 | “Me conformo” Mike Towers | Mike towers |
 | 99 | Check yes or no | George strait |
-| 100 | Donât stop till you get enough | Michael Jackson |
+| 100 | Don’t stop till you get enough | Michael Jackson |
 | 101 | Opposite | Sabrina carpenter |
 | 102 | Wonderwall | Oasis |
 | 103 | No Idea | Dontoliver |
@@ -112,7 +112,7 @@
 | 110 | Ooh Nah Nah | SiR, Masego |
 | 111 | White Keys | Dominic Fike |
 | 112 | Good Drank | 2 Chainz, Gucci Mane, Quavo |
-| 113 | Donât Go Breaking My Heart | Elton John |
+| 113 | Don’t Go Breaking My Heart | Elton John |
 | 114 | False Night | Yorushika |
 | 115 | Take it Easy | Eagles |
 | 116 | Easier | 5SOS |
@@ -133,7 +133,7 @@
 | 131 | Rethink some things | Luke Combs |
 | 132 | Flores | LATIN MAFIA |
 | 133 | Slide | Frank Ocean |
-| 134 | boys donât cry | lil tecca |
+| 134 | boys don’t cry | lil tecca |
 | 135 | Get you | Daniel Caesar |
 | 136 | The Weight | The Band |
 | 137 | tn | morgan wallen |
@@ -143,10 +143,10 @@
 | 141 | Monday Morning Faith | SEU worship |
 | 142 | Carolina in my mind | James Taylor |
 | 143 | Lighthouse | Noah Kahan |
-| 144 | Breakfast at Tiffanyâs | Deep Blue Something |
+| 144 | Breakfast at Tiffany’s | Deep Blue Something |
 | 145 | The chain | Fleetwood Mac |
 | 146 | Ventura Highway | America |
-| 147 | Gettinâ hot | Knock2 |
+| 147 | Gettin’ hot | Knock2 |
 | 148 | What are you listening to | Chris Stapleton |
 
 Download: [playlist_import.csv](docs_data/playlist_import.csv)

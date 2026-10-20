@@ -1,2 +1,2 @@
-- **PC1** explains approximately **6.0%** of the variance. Positive terms include: relaxed, happy, happy relaxed, very happy, calm relaxed, energized happy.
-- **PC2** explains approximately **5.6%** of the variance. Positive terms include: relaxed, calm, calm relaxed, very calm, happy relaxed, hyped.
+- **PC1** explains approximately **6.0%** of the variance. Positive terms include: happy, relaxed, happy relaxed, very happy, energized happy, when.
+- **PC2** explains approximately **5.6%** of the variance. Positive terms include: relaxed, calm, calm relaxed, happy relaxed, very calm, which.
