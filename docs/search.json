@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "Behind the Scenes",
+    "objectID": "schemas/google_form_schema.html",
+    "href": "schemas/google_form_schema.html",
+    "title": "",
     "section": "",
-    "text": "The music map uses the sentence each person wrote about how their song makes them feel. The AI word cloud uses the one-sentence definition of artificial intelligence from the survey.\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\nsrc=Path(\"docs_data/responses_anon.csv\")\nif src.exists():\n    df=pd.read_csv(src)\n    if \"ai_definition\" in df:\n        display(df[\"ai_definition\"].dropna().head(3).tolist())\n\n\n['Something that changed everything.',\n 'A system that assists in increasing the efficiency of society',\n 'Any sort of machine or process that learns from itself']"
+    "text": "Code\n\n\n\n\n\nGoogle Form blueprint\nUse DATA 117 survey. No role/program or genres are expected. Hometown is used only for a word cloud. AI definitions are used for the AI-definition word cloud."
+  },
+  {
+    "objectID": "DEPLOY.html",
+    "href": "DEPLOY.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nDeploy AI-117\nAdd repository secrets:\nGOOGLE_SHEET_ID=XXXXXXX\nGOOGLE_SHEET_GID=7XXXXXX\nANON_SALT=data117-fall-2026\nUse GitHub Pages: branch main, folder /docs."
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "File\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per participant, hashed ID, published survey fields\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\nplaylist_tracks.csv\nRequested and matched song metadata\n\n\n\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\np=Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df=pd.read_csv(p); print(f\"{len(df)} participants, {len(df.columns)} columns\"); display(df.head(150))\n\n\n148 participants, 8 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nbackground\nhometown\nsong_title\nsong_artist\ntaste_text\nai_definition\nparticipant_id\n\n\n\n\n0\n8/17/2026 11:50:18\nBusiness Major\nCary, North Carolina, USA\nNot You Too\nDrake & Chris Brown\nLovely\nSomething that changed everything.\nade3cb3e\n\n\n1\n8/17/2026 11:50:33\nMathematics\nBirmingham AL\nBeen by now\nMorgan wallen\nDriving windows down summer\nA system that assists in increasing the effici...\n9c16ded3\n\n\n2\n8/17/2026 11:50:38\nPre Business\nCharlotte, NC\nUp All Night\nWidespread Panic\nHappy and higher energy\nAny sort of machine or process that learns fro...\ne8ddc51f\n\n\n3\n8/17/2026 11:50:45\nBusiness\nCary, NC\nCircles\nPost Malone\nNostalgia\nA system of neural networks powered by data-dr...\n796b0ad0\n\n\n4\n8/17/2026 11:50:46\nData Science\nSmithfield/NC/United States\nCaramelo - Remix\nOzuna\nIt makes me feel relaxed\nAn artificial helper that makes everyday tasks...\ne34280e7\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n143\n8/17/2026 13:02:04\nPre-Business\nWinston-Salem, NC\nBreakfast at Tiffany’s\nDeep Blue Something\nThe soundtrack is catchy and I enjoy listening...\nA useful but unknown tool that can assist with...\nb5211f62\n\n\n144\n8/17/2026 13:12:29\nArts and sciences\nBoston Massachusetts\nThe chain\nFleetwood Mac\nIt makes me feel happy and gives me good vibes\nAi is a system used to help with whatever you ...\n9c31cd1a\n\n\n145\n8/19/2026 12:23:00\nBusiness Administration\nBrooklyn, NY\nVentura Highway\nAmerica\nThis song makes me feel calm and euphoric.\nAI is powerful tool that will consume the rest...\n4b12ebf3\n\n\n146\n8/19/2026 13:43:54\nMathematics\nSalisbury, NC\nGettin’ hot\nKnock2\nThe song makes me feel energetic, happy, upbea...\nAI makes our lives easier and evolves the more...\nfe4d9479\n\n\n147\n8/20/2026 17:52:46\nBiology\nBoston\nWhat are you listening to\nChris Stapleton\nThis song makes me feel wonder towards all the...\nAI is a tool that is used to recognize pattern...\nba97bc95\n\n\n\n\n148 rows × 8 columns"
   },
   {
     "objectID": "taste-map.html",
@@ -42,27 +56,6 @@
     "text": "Reading the axes\n\nPC1 explains approximately 6.0% of the variance. Positive terms include: happy, relaxed, happy relaxed, very happy, energized happy, when.\nPC2 explains approximately 5.6% of the variance. Positive terms include: relaxed, calm, calm relaxed, happy relaxed, very calm, which.\n\n\n\n\nTerms with strongest loadings on each component"
   },
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data",
-    "section": "",
-    "text": "File\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per participant, hashed ID, published survey fields\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\nplaylist_tracks.csv\nRequested and matched song metadata\n\n\n\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\np=Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df=pd.read_csv(p); print(f\"{len(df)} participants, {len(df.columns)} columns\"); display(df.head(150))\n\n\n148 participants, 8 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nbackground\nhometown\nsong_title\nsong_artist\ntaste_text\nai_definition\nparticipant_id\n\n\n\n\n0\n8/17/2026 11:50:18\nBusiness Major\nCary, North Carolina, USA\nNot You Too\nDrake & Chris Brown\nLovely\nSomething that changed everything.\nade3cb3e\n\n\n1\n8/17/2026 11:50:33\nMathematics\nBirmingham AL\nBeen by now\nMorgan wallen\nDriving windows down summer\nA system that assists in increasing the effici...\n9c16ded3\n\n\n2\n8/17/2026 11:50:38\nPre Business\nCharlotte, NC\nUp All Night\nWidespread Panic\nHappy and higher energy\nAny sort of machine or process that learns fro...\ne8ddc51f\n\n\n3\n8/17/2026 11:50:45\nBusiness\nCary, NC\nCircles\nPost Malone\nNostalgia\nA system of neural networks powered by data-dr...\n796b0ad0\n\n\n4\n8/17/2026 11:50:46\nData Science\nSmithfield/NC/United States\nCaramelo - Remix\nOzuna\nIt makes me feel relaxed\nAn artificial helper that makes everyday tasks...\ne34280e7\n\n\n...\n...\n...\n...\n...\n...\n...\n...\n...\n\n\n143\n8/17/2026 13:02:04\nPre-Business\nWinston-Salem, NC\nBreakfast at Tiffany’s\nDeep Blue Something\nThe soundtrack is catchy and I enjoy listening...\nA useful but unknown tool that can assist with...\nb5211f62\n\n\n144\n8/17/2026 13:12:29\nArts and sciences\nBoston Massachusetts\nThe chain\nFleetwood Mac\nIt makes me feel happy and gives me good vibes\nAi is a system used to help with whatever you ...\n9c31cd1a\n\n\n145\n8/19/2026 12:23:00\nBusiness Administration\nBrooklyn, NY\nVentura Highway\nAmerica\nThis song makes me feel calm and euphoric.\nAI is powerful tool that will consume the rest...\n4b12ebf3\n\n\n146\n8/19/2026 13:43:54\nMathematics\nSalisbury, NC\nGettin’ hot\nKnock2\nThe song makes me feel energetic, happy, upbea...\nAI makes our lives easier and evolves the more...\nfe4d9479\n\n\n147\n8/20/2026 17:52:46\nBiology\nBoston\nWhat are you listening to\nChris Stapleton\nThis song makes me feel wonder towards all the...\nAI is a tool that is used to recognize pattern...\nba97bc95\n\n\n\n\n148 rows × 8 columns"
-  },
-  {
-    "objectID": "schemas/google_form_schema.html",
-    "href": "schemas/google_form_schema.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\nGoogle Form blueprint\nUse DATA 117 survey. No role/program or genres are expected. Hometown is used only for a word cloud. AI definitions are used for the AI-definition word cloud."
-  },
-  {
-    "objectID": "DEPLOY.html",
-    "href": "DEPLOY.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\nDeploy AI-117\nAdd repository secrets:\nGOOGLE_SHEET_ID=XXXXXXX\nGOOGLE_SHEET_GID=7XXXXXX\nANON_SALT=data117-fall-2026\nUse GitHub Pages: branch main, folder /docs."
-  },
-  {
     "objectID": "playlist.html",
     "href": "playlist.html",
     "title": "The DATA 117 Playlist",
@@ -96,5 +89,12 @@
     "title": "DATA 117 Fall 2026 Cohort",
     "section": "What’s next",
     "text": "What’s next\n\nMusic Map — where songs and one-sentence reflections land in music-text space.\nData — the anonymized dataset and generated files.\nPlaylist — the class playlist"
+  },
+  {
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Behind the Scenes",
+    "section": "",
+    "text": "The music map uses the sentence each person wrote about how their song makes them feel. The AI word cloud uses the one-sentence definition of artificial intelligence from the survey.\n\n\nCode\nfrom pathlib import Path\nimport pandas as pd\nsrc=Path(\"docs_data/responses_anon.csv\")\nif src.exists():\n    df=pd.read_csv(src)\n    if \"ai_definition\" in df:\n        display(df[\"ai_definition\"].dropna().head(3).tolist())\n\n\n['Something that changed everything.',\n 'A system that assists in increasing the efficiency of society',\n 'Any sort of machine or process that learns from itself']"
   }
 ]
